@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form action="submit.php" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" placeholder="Select your date of birth" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="photo">Insert Your Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <label for="security_question">Security Question:</label>
+        <select id="security_question" name="security_question" required>
+            <option value="">Select a security question</option>
+            <option value="pet">What is the name of your first pet?</option>
+            <option value="school">What is the name of your primary school?</option>
+            <option value="city">What city were you born in?</option>
+        </select><br><br>
+
+        <input type="checkbox" id="terms_condition" name="terms_condition" required>
+        <label for="terms_condition">I agree to the terms and conditions</label><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
